@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "outDir": "out",
+    "lib": ["es2020", "dom"],
+    "sourceMap": false,
+    "declaration": false,
+    "rootDir": "src",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "types": ["node", "vscode"],
+    "incremental": true,
+    "tsBuildInfoFile": "./out/.tsbuildinfo"
+  },
+  "include": ["src"]
+}

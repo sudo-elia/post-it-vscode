@@ -1,0 +1,47 @@
+{
+  "name": "postit",
+  "displayName": "PostIt",
+  "description": "A minimal Post-it extension: adds a footer icon that opens a small notes window.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "publisher": "sudo-elia",
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "18.19.130",
+    "@types/vscode": "1.105.0",
+    "tslib": "2.8.1",
+    "typescript": "5.9.3"
+  },
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "PostIt"
+    },
+    "views": {
+      "postitContainer": [
+        {
+          "id": "postitView",
+          "name": "Post-it"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "postit.toggle",
+        "title": "%command.postit.toggle%",
+        "category": "PostIt"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ]
+}
