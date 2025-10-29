@@ -2,7 +2,7 @@
   "name": "postit",
   "displayName": "PostIt",
   "description": "A minimal Post-it extension: adds a footer icon that opens a small notes window.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.75.0"
   },
