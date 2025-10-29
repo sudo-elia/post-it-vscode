@@ -20,8 +20,13 @@ jobs:
         with:
           node-version: '22.18.0'
 
+      - name: Diagnostic - Node & npm
+        run: |
+          node -v
+          npm -v
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci || npm install
 
       - name: Build extension
         run: npm run build --silent
@@ -30,4 +35,4 @@ jobs:
         env:
           ACCESS_TOKEN_AZURE: ${{ secrets.AZURE_VSCODE_TOKEN }}
         run: |
-          npx --yes vsce publish --pat "$ACCESS_TOKEN_AZURE"
+          npx --yes @vscode/vsce publish --pat "$ACCESS_TOKEN_AZURE"
