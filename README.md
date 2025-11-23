@@ -1,7 +1,5 @@
 # PostIt — Extension
 
-This document targets developers who want to build, debug or extend the PostIt VS Code extension.
-
 ## Overview
 PostIt is a minimal Webview-based VS Code extension that offers small sticky notes persisted locally using `ExtensionContext.globalState`. The extension exposes a status-bar command (`postit.toggle`) which opens a WebviewPanel beside the editor containing the note UI.
 
