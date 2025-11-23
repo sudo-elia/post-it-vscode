@@ -79,7 +79,3 @@ Useful scripts (from `package.json`):
 
 ## Contact / Contributing
 Open issues or PRs against the repository. Keep changes small and focused on low-runtime overhead.
-
----
-
-If you want, I can also add a `DEVELOPMENT.md` with step-by-step debugging scenarios and a minimal test skeleton. Want that?
